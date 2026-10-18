@@ -1,0 +1,16 @@
+# Surplus Funds Tracker — Netlify config
+# Current release: index-v0.1.1.html (previous versions stay in the repo for rollback)
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/index-v0.1.1.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

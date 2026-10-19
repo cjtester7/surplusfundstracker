@@ -1,11 +1,11 @@
 # Surplus Funds Tracker — Netlify config
-# Current release: index-v0.2.0.html (previous versions stay in the repo for rollback)
+# Current release: index-v1.0.0.html (previous versions stay in the repo for rollback)
 [build]
   publish = "."
 
 [[redirects]]
   from = "/"
-  to = "/index-v0.2.0.html"
+  to = "/index-v1.0.0.html"
   status = 200
 
 [[headers]]
